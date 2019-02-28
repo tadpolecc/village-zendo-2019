@@ -1,0 +1,140 @@
+
+Close
+
+Customizing Additional CSS
+CSS code
+
+body {
+
+    background-color: #4b0606;
+
+    /* Match sidebar usr #773a25*/
+
+
+
+}
+
+.registerButton {
+
+    margin: 5px auto;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    padding: 10px;
+
+    color: #fff;
+
+    background: #3487d4;
+
+}
+
+.registerButton:hover {
+
+    background: #ee2f3d;
+
+    color: #fff;
+
+}
+
+​
+
+    /*
+
+    Generic Styling, for Desktops/Laptops
+
+    */
+
+table {
+
+    width: 100% !important;
+
+    border-collapse: collapse;
+
+}
+
+th {
+
+    background: #333;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+td, th {
+
+    padding: 6px;
+
+    border: 1px solid #ccc;
+
+    text-align: left;
+
+}
+
+​
+
+.page-id-69 td{
+
+    text-align: center;
+
+    padding-top: 15px;
+
+}
+
+​
+
+@media only screen and (max-width: 1200px) {
+
+    .sidebar-content-sidebar .content-sidebar-wrap{
+
+        width:80%;
+
+    }
+
+    .site-inner,
+
+    .wrap,
+
+    .site-container {
+
+        max-width: 100%;
+
+    }
+
+    ​
+
+    .home.sidebar-content-sidebar .content-sidebar-wrap {
+
+        width: 100%;
+
+    }
+
+    ​
+
+    .home .wrap{
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .content-sidebar-wrap header.masthead h1 {
+
+        width: 420px;
+
+        See full historyHelp
+        Media Width
+        px Set a different content width for full size images.
+        Start Fresh	Don't use the theme's original CSS.
+        Preprocessor
+
+
+
