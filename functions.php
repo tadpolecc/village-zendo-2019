@@ -84,7 +84,9 @@ add_action( 'genesis_after_content', 'genesis_footer_widget_areas', 4 );
 add_theme_support( 'genesis-responsive-viewport' );
 
 // Unregister primary/secondary navigation menus
-remove_theme_support( 'genesis-menus' );
+// remove_theme_support( 'genesis-menus' );
+//* Unregister primary navigation menu
+add_theme_support( 'genesis-menus', array( 'third-menu' => __( 'Front Page Navigation Menu', 'genesis' ) ) );
 
 // Widgets
 unregister_sidebar( 'header-right' );

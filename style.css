@@ -1398,6 +1398,81 @@ aside.main-cta .widget {
 	margin-bottom: 0;
 }
 
+/* Nav styles start
+-------------------------------------------------------------------------------- */
+
+.genesis-nav-menu{
+    background-color:#fff;
+    width:100%;
+}
+
+.genesis-nav-menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+.genesis-nav-menu ul ul{
+    margin-left:0;
+}
+
+.genesis-nav-menu li{
+    padding:0 .25em;
+	white-space:nowrap;
+}
+
+body.home .genesis-nav-menu a:hover,
+body.home .genesis-nav-menu .current-menu-item > a,
+body.home .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	text-decoration: underline;
+}
+
+.genesis-nav-menu li:after{
+    content:"|";
+    margin-left:.5vw;
+}
+
+.genesis-nav-menu li:last-child:after, .genesis-nav-menu .menu-item-has-children .sub-menu li:after{
+    content:"";
+    margin-left:0;
+}
+
+div.nav-primary .genesis-nav-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size:calc(1px + 1.1vw);
+}
+
+.nav-primary .menu-item-has-children .sub-menu{
+    display:none;
+}
+
+.nav-primary .menu-item-has-children:hover .sub-menu{
+    display:block;
+}
+
+.nav-primary .menu-item-has-children .sub-menu{
+    position:absolute;
+    background-color:#fff;
+    padding: 0 1em .5em 1em;
+}
+
+@media (max-width: 925px){
+    .genesis-nav-menu{
+        display:none;
+    }
+}
+
+@media (min-width: 1300px){
+    div.nav-primary .genesis-nav-menu a {
+	    font-size:16px;
+	}
+}
+
+/* Front Page Top Nav end */
+
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
