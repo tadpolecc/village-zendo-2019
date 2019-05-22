@@ -176,3 +176,17 @@ function tc_hidden_theme_2015( $r, $url ) {
 }
  
 add_filter( 'http_request_args', 'tc_hidden_theme_2015', 5, 2 );
+
+// Setting the site logo doesn't cause Jetpack to set the og:image as expected,
+// so force it: https://jetpack.com/tag/open-graph/
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        // Remove the default blank image added by Jetpack
+        unset( $tags['og:image'] );
+ 
+        $fb_home_img = 'https://villagezendo.org/wp-content/uploads/2019/02/masthead-sharing.jpg';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+//add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
