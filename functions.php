@@ -54,7 +54,8 @@ add_action( 'genesis_before_content', 'tc_vz_header' );
 function tc_vz_header() {
 	//IF IT'S THE HOMEPAGE, CUSTOM HEADER
 	if (is_front_page() == true) {
-		include( get_template_directory() . '/customHeader.php' );
+		include('wp-content/themes/village-zendo-2018/customHeader.php');
+		#include( get_template_directory() . '/customHeader.php' );
 	} else { ?>
         <div class="vz-header">
             <a class="logo-img" href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
